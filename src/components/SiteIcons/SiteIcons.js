@@ -3,7 +3,6 @@ import siteIconStyles from './siteIcons.module.css';
 import GitHubIcon from '../../../static/icons/GitHub-icon.svg';
 import FileIcon from '../../../static/icons/file-icon.svg';
 import LinkedInIcon from '../../../static/icons/LinkedIn-icon.svg';
-import Resume from '../../../static/Raymond_Lo_Resume_PDF.pdf';
 
 function SiteIcons({ lineColor, marginTop, iconColor, isFocusable }) {
     const { line, icon, iconsContainer, siteIconsContainer } = siteIconStyles;
@@ -34,20 +33,6 @@ function SiteIcons({ lineColor, marginTop, iconColor, isFocusable }) {
                         className={icon}
                         src={LinkedInIcon}
                         alt="LinkedIn icon"
-                    />
-                </a>
-                <a
-                    target="_blank"
-                    aria-label="Download resume"
-                    href={Resume}
-                    tabIndex={isFocusable ? 0 : -1}
-                    download
-                >
-                    <img
-                        style={{ filter: iconColor }}
-                        className={icon}
-                        src={FileIcon}
-                        alt="Resume file icon"
                     />
                 </a>
             </div>
